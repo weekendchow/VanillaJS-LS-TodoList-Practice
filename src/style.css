@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 80px;
+  margin-bottom: 50px;
+  color: green;
+}
+
+.input-field {
+  font-size: 15px;
+  margin: 10px;
+}
+
+
+ul {
+  margin-top: 40px;
+  list-style: none;
+  font-size: 20px;
+}
+
+
+li {
+  font-weight: 400;
+  border-bottom: 1px solid #cfcbcc;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+
+li:before {
+  content: "\25A1";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+li:hover {
+  color: #899098;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.checked {
+  color:green;
+}
+
+.checked:hover{
+  color:green;
+  text-decoration: none;
+}
+
+.checked:before {
+  content: "\2713";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+.checked:hover:after{
+  content: "(remove)";
+  color: tomato;
+  text-align: right;
+}
